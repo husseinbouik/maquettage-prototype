@@ -124,19 +124,19 @@
         <div class="content-wrapper" style="min-height: 1302.4px;">
 
             <div class="content-header">
-                <!-- <div class="container-fluid">
+                <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Taches</h1>
+                            <h1>Tasks</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item active">Edit Tache</li>
-                                <li class="breadcrumb-item"><a href="./index.html">Taches</a> </li>
+                                <li class="breadcrumb-item active">Edit Task</li>
+                                <li class="breadcrumb-item"><a href="./index.html">Tasks</a></li>
                             </ol>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
 
             <section class="content">
@@ -146,35 +146,21 @@
 
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Edit Tache</h3>
+                                    <h3 class="card-title">Edit Tasks</h3>
                                 </div>
                                 <form>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Nom </label>
+                                            <label for="exampleInputEmail1">Name </label>
                                             <input name="nom" type="text" class="form-control"
                                                 id="exampleInputEmail1" placeholder="Enter email">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Description</label>
-                                            <input name="description" type="text" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Description">
+                                         <textarea id="description" name="description" ></textarea>
+
                                         </div>
-
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">date debut</label>
-                                            <input name="startDate" type="date" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">date fin</label>
-                                            <input name="endtDate" type="date" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-
                                     </div>
 
                                     <div class="card-footer">
@@ -199,6 +185,15 @@
 
 
     <!-- scripts -->
+    <script src="https://cdn.tiny.cloud/1/d2nq8cur7uv9c3ovyevwee5l5e5k2ym6hodsnpuuy1hyy1yf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea#description',
+        plugins: 'link image code',
+        toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | link image | code',
+        menubar: false,
+    });
+</script>
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
