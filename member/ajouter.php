@@ -49,10 +49,10 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../project/index.html" class="nav-link">Projets</a>
+                    <a href="../project/index.php" class="nav-link">Projets</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="./index.html" class="nav-link">Members</a>
+                    <a href="./index.php" class="nav-link">Members</a>
                 </li>
             </ul>
         </nav>
@@ -72,7 +72,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="../project/index.html" class="nav-link ">
+                            <a href="../project/index.php" class="nav-link ">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Projets
@@ -80,7 +80,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link ">
+                            <a href="./index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
                                     Members
@@ -106,7 +106,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="float-sm-right">
-                                <a href="./ajouter.html" class="btn btn-sm btn-primary">Ajouter Member</a>
+                                <a href="./ajouter.php" class="btn btn-sm btn-primary">Ajouter Member</a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
 
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">edit Member</h3>
+                                    <h3 class="card-title">Ajouet Member</h3>
                                 </div>
                                 <form>
                                     <div class="card-body">
@@ -151,7 +151,7 @@
                                     </div>
 
                                     <div class="card-footer">
-                                        <a href="./index.html" class="btn btn-default">Cancel</a>
+                                        <a href="./index.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>

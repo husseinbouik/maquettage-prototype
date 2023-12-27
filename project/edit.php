@@ -28,9 +28,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -47,7 +45,7 @@
     <div class="wrapper">
 
 
-        <!-- nav -->
+         <!-- nav -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -55,7 +53,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- aside -->
+         <!-- aside -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
@@ -71,23 +69,23 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="../project/index.html" class="nav-link ">
+                            <a href="./index.php" class="nav-link ">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Projects
+                                    Projets
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../project/tache/index.html" class="nav-link ">
+                            <a href="././tache/index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
-                                    Tasks
+                                    Taches
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link ">
+                            <a href="../member/index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
                                     Members
@@ -106,97 +104,51 @@
         <div class="content-wrapper" style="min-height: 1302.4px;">
 
             <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>List of Members</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="float-sm-right">
-                                <a href="./ajouter.html" class="btn btnAdd">Add New</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header col-md-12">
-                                    <div class=" p-0">
-                                        <div class="input-group input-group-sm float-sm-right col-md-3 p-0">
-                                            <input type="text" name="table_search" class="form-control float-right"
-                                                placeholder="Search">
-                                            <div class="input-group-append">
-                                                <button type="submit" class="btn btn-default">
-                                                    <i class="fas fa-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-12">
 
-                                <div class="card-body table-responsive p-0">
-                                    <table class="table table-striped text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>email</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>ahmed alami</td>
-                                                <td>
-                                                    ahmed@gmail.com
-                                                </td>
-                                                <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <button type="button" class="btn btn-sm btn-danger"><i
-                                                            class="fa-solid fa-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Achou</td>
-                                                <td>
-                                                    Achou@gmail.com
-                                                </td>
-                                                <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <button type="button" class="btn btn-sm btn-danger"><i
-                                                            class="fa-solid fa-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>ben nasser</td>
-                                                <td>
-                                                    adnan@gmail.com
-                                                </td>
-                                                <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <button type="button" class="btn btn-sm btn-danger"><i
-                                                            class="fa-solid fa-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Edit Projet</h3>
                                 </div>
-                                <div class="card-footer clearfix mb-2 mr-5">
-                                    <ul class="pagination  m-0 float-right">
-                                        <li class="page-item"><a class="page-link" href="#">«</a></li>
-                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">»</a></li>
-                                    </ul>
-                                </div>
+                                <form>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Nom </label>
+                                            <input name="nom" type="text" class="form-control"
+                                                id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description</label>
+                                            <input name="description" type="password" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">date debut</label>
+                                            <input name="startDate" type="date" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">date fin</label>
+                                            <input name="endtDate" type="date" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a href="./index.php" class="btn btn-default">Cancel</a>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
                             </div>
 
                         </div>
@@ -207,10 +159,9 @@
 
         </div>
 
-
     </div>
 
-   
+
 
 
 

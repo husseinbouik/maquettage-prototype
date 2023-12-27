@@ -47,66 +47,9 @@
     <div class="wrapper">
 
 
-        <!-- nav -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-                <!-- <li class="nav-item d-none d-sm-inline-block">
-                    <a href="./index.html" class="nav-link">Projets</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../member/index.html" class="nav-link">Members</a>
-                </li> -->
-            </ul>
-        </nav>
-        <!-- aside -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="#" class="brand-link">
-                <img src="../../dist/img/solicoders-logo.png" class="brand-image img-circle elevation-3"
-                    alt="Group Image">
-                <span class="brand-text font-weight-light text-center">Projects Managment</span>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link ">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Projects
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">
-                                <i class="fa-solid fa-users pl-1 pr-1"></i>
-                                <p>
-                                    Tasks
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../member/index.html" class="nav-link ">
-                                <i class="fa-solid fa-users pl-1 pr-1"></i>
-                                <p>
-                                    Members
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
-            </div>
-            <!-- /.sidebar -->
-        </aside>
+    <?php
+include('../layouts/menu.php')
+?>
 
 
 
@@ -120,7 +63,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="float-sm-right">
-                                <a href="./ajouter.html" class="btn btnAdd">Add New</a>
+                                <a href="./ajouter.php" class="btn btnAdd">Add New</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +127,7 @@
                                                 <td>11-7-2014</td>
                                                 <td>11-7-2014</td>
                                                 <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
+                                                    <a href="./edit.php" class="btn btn-sm btn-default"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <button type="button" class="btn btn-sm btn-danger"><i
                                                             class="fa-solid fa-trash"></i></button>
@@ -199,7 +142,7 @@
                                                 <td>11-7-2014</td>
                                                 <td>11-7-2014</td>
                                                 <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
+                                                    <a href="./edit.php" class="btn btn-sm btn-default"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <button type="button" class="btn btn-sm btn-danger"><i
                                                             class="fa-solid fa-trash"></i></button>
@@ -213,7 +156,7 @@
                                                 <td>11-7-2014</td>
                                                 <td>11-7-2014</td>
                                                 <td>
-                                                    <a href="./edit.html" class="btn btn-sm btn-default"><i
+                                                    <a href="./edit.php" class="btn btn-sm btn-default"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <button type="button" class="btn btn-sm btn-danger"><i
                                                             class="fa-solid fa-trash"></i></button>
@@ -258,13 +201,13 @@
         </div>
 
 
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
                 <b>Version</b> 3.2.0
             </div>
             <strong>Copyright © 2014-2021 <a href="https://adminlte.io">Gestion Prototype</a>.</strong> All rights
             reserved.
-        </footer>
+        </footer> -->
 
        
 
@@ -273,44 +216,9 @@
 
 
 
-
-    <!-- scripts -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
-    <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ChartJS -->
-    <script src="../../plugins/chart.js/Chart.min.js"></script>
-    <!-- Sparkline -->
-    <script src="../../plugins/sparklines/sparkline.js"></script>
-    <!-- JQVMap -->
-    <script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-    <!-- overlayScrollbars -->
-    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../dist/js/pages/dashboard.js"></script>
-    <script src="../../dist/js/validationForm.js"></script>
-    <!-- scripts -->
+    <?php
+include('../../layouts/link-js.php')
+?>
 
 </body>
 

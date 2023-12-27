@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="../dist/css/alt/style.css">
-
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
@@ -39,13 +37,12 @@
         referrerpolicy="origin"></script>
     <!-- head -->
 </head>
-
 <body class="sidebar-mini" style="height: auto;">
 
     <div class="wrapper">
 
 
-         <!-- nav -->
+        <!-- nav -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -53,8 +50,10 @@
                 </li>
             </ul>
         </nav>
+        <!-- nav -->
+
          <!-- aside -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
                 <img src="../dist/img/solicoders-logo.png" class="brand-image img-circle elevation-3" alt="Group Image">
@@ -69,7 +68,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link ">
+                            <a href="./index.php" class="nav-link ">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Projets
@@ -77,7 +76,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="././tache/index.html" class="nav-link ">
+                            <a href="././tache/index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
                                     Taches
@@ -85,7 +84,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../member/index.html" class="nav-link ">
+                            <a href="../member/index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
                                     Members
@@ -104,6 +103,19 @@
         <div class="content-wrapper" style="min-height: 1302.4px;">
 
             <div class="content-header">
+                <!-- <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Projets</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item active">Ajouter Projet</li>
+                                <li class="breadcrumb-item"><a href="./index.php">Accueil</a> </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> -->
             </div>
 
             <section class="content">
@@ -113,7 +125,7 @@
 
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Edit Projet</h3>
+                                    <h3 class="card-title">Ajouet Projet</h3>
                                 </div>
                                 <form>
                                     <div class="card-body">
@@ -125,27 +137,27 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Description</label>
-                                            <input name="description" type="password" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Password">
+                                            <input name="description" type="text" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Description">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">date debut</label>
                                             <input name="startDate" type="date" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Password">
+                                                id="exampleInputPassword1" placeholder="date debut">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">date fin</label>
                                             <input name="endtDate" type="date" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Password">
+                                                id="exampleInputPassword1" placeholder="date fin">
                                         </div>
 
                                     </div>
 
                                     <div class="card-footer">
-                                        <a href="./index.html" class="btn btn-default">Cancel</a>
+                                        <a href="./index.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>

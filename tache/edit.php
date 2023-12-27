@@ -10,21 +10,21 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link
@@ -32,11 +32,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     /> -->
     <!-- summernote -->
-    <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
     <script src="https://cdn.tiny.cloud/1/d2nq8cur7uv9c3ovyevwee5l5e5k2ym6hodsnpuuy1hyy1yf/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
     <!-- head -->
 </head>
+
 <body class="sidebar-mini" style="height: auto;">
 
     <div class="wrapper">
@@ -49,10 +50,10 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../project/index.html" class="nav-link">Projets</a>
+                    <a href="./index.php" class="nav-link">Projets</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="./index.html" class="nav-link">Members</a>
+                    <a href="../member/index.php" class="nav-link">Members</a>
                 </li>
             </ul>
         </nav>
@@ -72,7 +73,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="../project/index.html" class="nav-link ">
+                            <a href="../index.php" class="nav-link ">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Projets
@@ -80,7 +81,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link ">
+                            <a href="../../member/index.php" class="nav-link ">
                                 <i class="fa-solid fa-users pl-1 pr-1"></i>
                                 <p>
                                     Members
@@ -102,12 +103,13 @@
                 <!-- <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>List des Members</h1>
+                            <h1>Taches</h1>
                         </div>
                         <div class="col-sm-6">
-                            <div class="float-sm-right">
-                                <a href="./ajouter.html" class="btn btn-sm btn-primary">Ajouter Member</a>
-                            </div>
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item active">Edit Tache</li>
+                                <li class="breadcrumb-item"><a href="./index.php">Taches</a> </li>
+                            </ol>
                         </div>
                     </div>
                 </div> -->
@@ -120,38 +122,39 @@
 
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Ajouet Member</h3>
+                                    <h3 class="card-title">Edit Tache</h3>
                                 </div>
                                 <form>
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Nom </label>
                                             <input name="nom" type="text" class="form-control"
-                                                id="exampleInputEmail1" placeholder="Enter Nom">
+                                                id="exampleInputEmail1" placeholder="Enter email">
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Prenom</label>
-                                            <input name="Prenom" type="text" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Prenom">
+                                            <label for="exampleInputPassword1">Description</label>
+                                            <input name="description" type="text" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Description">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">date debut</label>
+                                            <input name="startDate" type="date" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Password">
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="exampleInputPassword1">Email</label>
-                                            <input name="startDate" type="email" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Email">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input name="Password" type="password" class="form-control"
-                                                id="exampleInputPassword1" placeholder="Enter Password">
+                                            <label for="exampleInputPassword1">date fin</label>
+                                            <input name="endtDate" type="date" class="form-control"
+                                                id="exampleInputPassword1" placeholder="Password">
                                         </div>
 
                                     </div>
 
                                     <div class="card-footer">
-                                        <a href="./index.html" class="btn btn-default">Cancel</a>
+                                        <a href="./index.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>
@@ -173,41 +176,42 @@
 
     <!-- scripts -->
     <!-- jQuery -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- ChartJS -->
-    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
     <!-- Sparkline -->
-    <script src="../plugins/sparklines/sparkline.js"></script>
+    <script src="../../plugins/sparklines/sparkline.js"></script>
     <!-- JQVMap -->
-    <script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
     <!-- jQuery Knob Chart -->
-    <script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
     <!-- daterangepicker -->
-    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/moment/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Summernote -->
-    <script src="../plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
-    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../dist/js/adminlte.js"></script>
+    <script src="../../dist/js/adminlte.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../dist/js/demo.js"></script>
+    <script src="../../dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../dist/js/pages/dashboard.js"></script>
-    <script src="../dist/js/validationForm.js"></script>
+    <script src="../../dist/js/pages/dashboard.js"></script>
+    <script src="../../dist/js/validationForm.js"></script>
     <!-- scripts -->
+
 </body>
 
 </html>
